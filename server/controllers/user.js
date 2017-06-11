@@ -1,5 +1,5 @@
 var Users  = require('../models/users');
-var Classes  = require('../models/classes');
+// var Classes  = require('../models/gallery');
 // Wrap all the methods in an object
 
 var user = {
