@@ -4,10 +4,14 @@ app.config(function ($routeProvider) {
     $routeProvider
         .when('/',
             {
-                templateUrl: "classes.html",
+                templateUrl: "home.html",
                 controller: "MainPageControl"
             })
-
+         .when('/gallery',
+            {
+                templateUrl: "gallery.html",
+                controller: "ClassesCtrl"
+            })
         .when('/classes',
             {
                 templateUrl: "classes.html",
