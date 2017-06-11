@@ -25,7 +25,7 @@ app.controller('MainPageCtrl', function ($scope,$rootScope) {
         if (current== "undefined"||current==""||current==null) {
            // window.open("http://localhost:5000/#/classes", "_self");
             $rootScope.signOutButton = {'visibility': 'hidden'};
-            window.open("http://localhost:5000/#/classes", "_self");
+            window.open("http://localhost:5000/#/", "_self");
 
         }
         else
