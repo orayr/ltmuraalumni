@@ -32,6 +32,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname,'certificate')));
 app.use(express.static(path.join(__dirname,'/client/src/img/home')));
+app.use(express.static(path.join(__dirname,'/client/src/img/gallery')));
 app.use(express.static(path.join(__dirname,'client/app/controllers')));
 app.use(express.static(path.join(__dirname,'client/app/services')));
 app.use(express.static(path.join(__dirname,'client/app/directives')));
@@ -84,6 +85,7 @@ router.get('/', function(req, res) {
 router.get('/students', student.getAll);
 router.get('/classes', classes.getAll);
 router.get('/users', user.getAll);
+router.get('/gallery', user.getAll);
 
 
 router.post('/createStudent', student.create);

@@ -1,6 +1,7 @@
 
 app.controller('ClassesCtrl',function($scope,$routeParams,$rootScope,classesService,usersService,$timeout) {
     var current=localStorage.getItem('currentUser');
+    console.log("at ClassesCtrl!!!");
     if (current== "undefined"||current==""||current==null){
         window.open("http://localhost:5000/#/login", "_self");
     }
