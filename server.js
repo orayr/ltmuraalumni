@@ -64,7 +64,8 @@ db.once('open', function() {
 
 //mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb://chanami:123456@ds139438.mlab.com:39438/smart_school");
+mongoose.connect("mongodb://tmuracollege:123456@ds119772.mlab.com:19772/tmuradb");
+// mongoose.connect("mongodb://chanami:123456@ds139438.mlab.com:39438/smart_school");
 console.log("db connected!");
 
 //=========================--ROUTES/API--====================================
