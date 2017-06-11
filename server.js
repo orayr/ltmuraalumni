@@ -81,12 +81,12 @@ router.get('/', function(req, res) {
 
 
 // Get all products
-router.get('/students', student.getAll);
-router.get('/classes', classes.getAll);
+// router.get('/students', student.getAll);
+// router.get('/classes', classes.getAll);
 router.get('/users', user.getAll);
 
 
-router.post('/createStudent', student.create);
+// router.post('/createStudent', student.create);
 //
 // app.post('/createStudent', function (req, res) {
 //     console.log("in server function createStudent");
@@ -94,31 +94,31 @@ router.post('/createStudent', student.create);
 //   student.create(req);
 //    res.send("hello");
 // })
-router.get('/deleteStudent/:id',student.delete);
+// router.get('/deleteStudent/:id',student.delete);
 // router.get('/deleteCourse/:courseid',classes.deleteCourse);
 
 
-router.post('/updateStudent', student.update);
-router.post('/updateGreads', student.updateGreads);
-router.post('/confirmCourse', student.confirmCourse);
-router.post('/cancelConfirmCourse',student.cancelConfirmCourse);
+// router.post('/updateStudent', student.update);
+// router.post('/updateGreads', student.updateGreads);
+// router.post('/confirmCourse', student.confirmCourse);
+// router.post('/cancelConfirmCourse',student.cancelConfirmCourse);
 router.post('/login', user.getUser);
 router.post('/changePassword', user.updatePassword);
 
 
 
 
-router.post('/deleteCourse', classes.deleteCourse);
+// router.post('/deleteCourse', classes.deleteCourse);
 
 
-router.post('/updateClass', classes.update);
-router.post('/updateCourse', classes.updateCourse);
-router.post('/AddCourse', classes.CreateCourse);
-router.post('/updateGreads', student.updateGreads);
+// router.post('/updateClass', classes.update);
+// router.post('/updateCourse', classes.updateCourse);
+// router.post('/AddCourse', classes.CreateCourse);
+// router.post('/updateGreads', student.updateGreads);
 
-router.post('/confirmCourse', student.confirmCourse);
-router.post('/cancelConfirmCourse',student.cancelConfirmCourse);
-router.post('/switchClasses',classes.switchClasses);
+// router.post('/confirmCourse', student.confirmCourse);
+// router.post('/cancelConfirmCourse',student.cancelConfirmCourse);
+// router.post('/switchClasses',classes.switchClasses);
 router.post('/updateStaff',user.updateStaff);
 router.post('/createStuff',user.createStuff);
 router.post('/deleteUser',user.deleteUser);
@@ -131,10 +131,10 @@ router.post('/deleteUser',user.deleteUser);
 //router.post('/confirmCourse', student.confirmCourse);
 //router.post('/cancelConfirmCourse',student.cancelConfirmCourse);
 router.post('/login', user.getUser);
-router.post('/admin/Certificate',  student.certificate);
+// router.post('/admin/Certificate',  student.certificate);
 
 
-router.get('/admin/download',student.download);
+// router.get('/admin/download',student.download);
 
 // router.get('/download', function (req, res, next) {
 //     console.log("in server-download");
