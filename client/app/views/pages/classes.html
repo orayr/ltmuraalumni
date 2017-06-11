@@ -1,0 +1,36 @@
+
+
+
+<h1></h1>
+<h2></h2>
+<div class="container object" ng-repeat="class in MyClasses">
+    <div id="main-container-image">
+        <section class="work">
+            <figure class="white">
+                <a  id="myBtn" ng-click="display(class.ClassId)">
+                    <img img src="/class.jpg" alt="" />
+                </a>
+                <div id="myModal" class="modal{{class.ClassId}}" >
+                    <div class="modal-content">
+                        <span class="close" ng-click="exit(class.ClassId)">&times;</span>
+                        <a ng-href="#/classes/{{class.ClassId}}/students">תלמידים</a>
+                       <a ng-href="#/classes/{{class.ClassId}}/courses" ng-if="accessToUpdate(class.ClassId)==1|| AccessToUpdate">עדכון ציונים לקורסים</a>
+                        <a ng-href="#/classes/{{class.ClassId}}/confirmCourses" ng-if="accessToConfirm(class.ClassId)==1 || AccessToConfirm">אישור ציונים</a>
+                    </div>
+                </div>
+                <div id="wrapper-part-info">
+                    <div id="part-info">{{class.ClassName}}</div>
+                </div>
+            </figure>
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+   
+          
+

@@ -1,0 +1,50 @@
+
+
+
+
+<div class="studentInfo">
+<form name="myGrade2" ng-submit="updateGreads(myGrade2)" ng-if="findConfirmEducator(courseId)==0" >
+
+    <table class="grades">
+        <tr>
+            <td><h1>תעודת זהות</h1></td>
+            <td><h1>שם פרטי</h1></td>
+            <td><h1>שם משפחה</h1></td>
+            <td><h1>ציון</h1></td>
+            <td><h1>הערכה מילולית</h1></td>
+        </tr>
+        <tr ng-repeat="student in MyStudents" >
+            <td>{{student.StudentId}}</td>
+            <td>{{student.FirstName}}</td>
+            <td>{{student.LastName }}</td>
+            <td><input  type ="text"  value="{{findGread(student.StudentId,courseId)}}" required  name="Grade"/></td>
+            <td><textarea rows="4" cols="50"  type ="text"    name="Evaluation">{{findEvaluation(student.StudentId,courseId)}}</textarea></td>
+
+        </tr>
+
+    </table>
+    <br />
+    <input id="up" class="submit" type="submit"   name="submit" value="עדכן" />
+</form>
+
+<table id="gradesAfter" ng-if="findConfirmEducator(courseId)==1">
+    <tr>
+        <td><h1>תעודת זהות</h1></td>
+        <td><h1>שם פרטי</h1></td>
+        <td><h1>שם משפחה</h1></td>
+        <td><h1>ציון</h1></td>
+        <td><h1>הערכה מילולית</h1></td>
+    </tr>
+    <tr ng-repeat="student in MyStudents"  >
+        <td>{{student.StudentId}}</td>
+        <td>{{student.FirstName}}</td>
+        <td>{{student.LastName }}</td>
+        <td>{{findGread(student.StudentId,courseId)}}</td>
+        <td>{{findEvaluation(student.StudentId,courseId)}}</td>
+
+    </tr>
+
+</table>
+
+<p style="color: red">{{message1}}</p>
+</div>

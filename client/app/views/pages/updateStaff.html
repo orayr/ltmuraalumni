@@ -1,0 +1,30 @@
+
+
+<form name="myForm1" ng-submit="updateStaff(myForm1)">
+    <div class="studentInfo">
+        <div class="tableInfo">
+
+            <h1>עדכון איש צוות </h1>
+            <table id="addCourse">
+                <tr><td> <br />
+
+            <strong>שם</strong> <br /><input   type ="text" value="{{user.UserName}}" name="UserName" required/></br>
+    <!--<strong>תז : </strong><input   type ="text" value="{{user.UserId}}" name="UserId" required/></br>-->
+    <strong>הרשאה</strong>
+    <br />
+    <select   name="Type"  required>
+    <option value="{{user.UserType}}" selected>הרשאה</option>
+        <option value="1" >מורה</option>
+        <option value="2"  > מחנך</option>
+        <option value="3">רכז שכבה</option>
+        <option value="4">מנהל</option>
+        <option value="5"  >מזכירה</option>
+
+    </select></br>
+                   </td></tr></table>
+            <br />
+            <input id="up" class="submit" type="submit" value="עדכן">
+            <br />
+        </div>
+    </div>
+</form>
