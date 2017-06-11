@@ -16,12 +16,14 @@
     <script src="jquery-3.1.1.min.js"></script>
  <link rel="shortcut icon" type="image/x-icon" href="client/src/img/favicon.ico" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    
     <script src="SwitchingBetweenPages.js" ></script>
+    <script src="MainPageCtrl.js"></script>
     <script src="ClassCtrl.js" ></script>
     <script src="ClassesCtrl.js" ></script>
     <script src="StudentCtrl.js" ></script>
     <script src="StudentsCtrl.js" ></script>
-    <script src="MainPageCtrl.js" ></script>
+
     <script src="adminCtrl.js" ></script>
     <script src="AdminStaffCtrl.js" ></script>
     <script src="AdminClassesCtrl.js" ></script>
@@ -60,9 +62,13 @@
     <link href='home.css' rel='stylesheet' type='text/css'>
     <link href='style.css' rel='stylesheet' type='text/css'>
 </head>
+</div>
 
+<body ng-controller="MainPageCtrl">
+    <button   class="loginButton" ng-style="signOutButton" ng-click="signInOut()">sign out</button>
+    <button class="loginButton"  ng-style="signOutButton" ng-click="changePassword()"   >change password</button>
+    <button class="loginButton"  ng-style="adminButton" ng-click="admin()">admin</button>
 
-<body>
     <div ng-view>
     </div>
 </body>
