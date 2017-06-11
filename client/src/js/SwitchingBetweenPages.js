@@ -10,7 +10,7 @@ app.config(function ($routeProvider) {
          .when('/gallery',
             {
                 templateUrl: "gallery.html",
-                controller: "ClassesCtrl"
+                controller: "GalleryCtrl"
             })
         .when('/classes',
             {
