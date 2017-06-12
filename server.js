@@ -27,6 +27,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname,'certificate')));
 app.use(express.static(path.join(__dirname,'/client/src/img/home')));
 app.use(express.static(path.join(__dirname,'/client/src/img/gallery')));
+app.use(express.static(path.join(__dirname,'/client/src/img/sites')));
 app.use(express.static(path.join(__dirname,'client/app/controllers')));
 app.use(express.static(path.join(__dirname,'client/app/services')));
 app.use(express.static(path.join(__dirname,'client/app/directives')));
@@ -71,6 +72,8 @@ router.get('/', function(req, res) {
 });
 router.get('/users', user.getAll);
 router.get('/gallery', user.getAll);
+router.get('/sites', user.getAll);
+router.get('/lessons', user.getAll);
 
 router.post('/login', user.getUser);
 router.post('/changePassword', user.updatePassword);

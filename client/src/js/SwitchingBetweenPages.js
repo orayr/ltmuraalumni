@@ -7,12 +7,21 @@ app.config(function ($routeProvider) {
                 templateUrl: "home.html",
                 controller: "HomeCtrl"
             })
-         .when('/gallery',
+         .when('/sites',
+            {
+                templateUrl: "sites.html",
+                controller: "SitesCtrl"
+            })
+          .when('/lessons',
+            {
+                templateUrl: "lessons.html",
+                controller: "LessonsCtrl"
+            })
+        .when('/gallery',
             {
                 templateUrl: "gallery.html",
                 controller: "GalleryCtrl"
             })
-        
 ////////////////////////////////admin side
         .when('/admin',
             {

@@ -1,43 +1,6 @@
-.body {
-    background-image: url("background.gif");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-.header {
-    display: inline-flex;
-}
-#header1, #header2 {
-   width:50%;
-   height:15%;
-}
-#header2 {
-    margin-left: -25px;
-}
-#logo {
-    width: 45%;
-    position: absolute;
-    left: 30%;
-    top: 220px;
-}
-ul.menu{
-    width: 90%;
-    height: 80px;
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    top: 370px;
-    display: inline-flex;
-    list-style-type: none;
-}
-ul.menu img {
-    height: 60px;
-}
-ul.menu img:hover {
-    opacity: 0.7;
-}
-
 .center {
 /*     margin: 5%;*/
+    margin-top: 10%;
 }
 .center .years {
     display: inline-flex;

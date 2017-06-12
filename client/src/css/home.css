@@ -1,28 +1,4 @@
-.header {
-    display: inline-flex;
 
-}
-#header1, #header2 {
-   width:50%;
-   height:15%;
-}
-#header2 {
-    margin-left: -42px;
-}
-#header3 {
-    width: 43%;
-    height: 15%;
-    margin-left: -572px;
-    margin-top: 65px;
-}
-
-#logo {
-    width: 60%;
-    position: absolute;
-    left: 21%;
-    top: 300px;
-    margin-top: 5%;
-}
 /*.center {
     display:table-row-group;
     /\* margin: 5%;
