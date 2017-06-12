@@ -77,7 +77,6 @@ router.post('/changePassword', user.updatePassword);
 router.post('/updateStaff',user.updateStaff);
 router.post('/createStuff',user.createStuff);
 router.post('/deleteUser',user.deleteUser);
-router.post('/login', user.getUser);
 router.post('/uploadimage', image.addNew);
 
 app.use('/', router);
