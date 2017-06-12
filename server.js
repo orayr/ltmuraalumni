@@ -28,6 +28,8 @@ app.use(express.static(path.join(__dirname,'certificate')));
 app.use(express.static(path.join(__dirname,'/client/src/img/home')));
 app.use(express.static(path.join(__dirname,'/client/src/img/gallery')));
 app.use(express.static(path.join(__dirname,'/client/src/img/sites')));
+app.use(express.static(path.join(__dirname,'/client/src/img/lessons')));
+
 app.use(express.static(path.join(__dirname,'client/app/controllers')));
 app.use(express.static(path.join(__dirname,'client/app/services')));
 app.use(express.static(path.join(__dirname,'client/app/directives')));
