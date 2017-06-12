@@ -36,7 +36,6 @@ app.controller('AdminStaffCtrl',function($scope,$routeParams,$rootScope,usersSer
 
                     "UserName":myForm1.UserName.value,
                      "UserId":myForm1.UserId.value,
-                    "Type":myForm1.Type.value,
                     "password":myForm1.password.value,
 
                 };

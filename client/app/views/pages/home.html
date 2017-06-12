@@ -1,48 +1,74 @@
-<div class="header">
-            <img id="header1" src="header1.png" alt="TMURA">
-            <img id="header2" src="header2.png" alt="TMURA">
-            <img id="logo" src="logo.gif" alt="TMURA">
-        </div>
-        <br />
-        <br />
-        <br />
-          <br />
-          <br />
-          <br />
+
+      <script type="text/javascript">
+      $(document).ready(function(){
+         $("#search4job").mouseenter(function(){
+                     $("#search4job").addClass( "hide" );
+                     $(".search4job_links").removeClass( "hide" );
+                    });
+         $(".search4job_links").mouseleave(function(){
+                     $(".search4job_links").addClass( "hide" );
+                     $("#search4job").removeClass( "hide" );
+                    });
+        });
+
+    </script> 
+<div class="body">
+    
+      <div class= "header">    
+        <img id="header1" src="header1.gif" alt="TMURA"></img>
+        <img id="header2" src="header2.png" alt="TMURA"></img>
+        <img id="logo" src="logo.gif" alt="TMURA"></img>
+
+    </div>
        <table class="center"> 
            <tr>
                <td>
-                 <a href="~/Home/lessons">
-                     <img id="kodesh" src="kodesh.png" />
+                 <a href="">
+                     <img id="kodesh" src="kodesh.png" alt="הרצאות ושיעורי קודש"></img> 
                  </a>
                </td>
                <td>
-                 <a href="~/Home/site">
-                     <img id="site" src="site.png" />
+                 <a href="">
+                     <img id="site" src="site.png" alt="אתרי תכנות שימושיים"></img> 
                  </a>
                </td>
                <td>
                     <a href="#/gallery/">
-                        <img id="galary" src="galary.png" />
+                        <img id="galary" src="galary.png" alt="גלריה"></img> 
                     </a>
                </td>
            </tr>
             <tr>
-                <td>  
-                    <a href="~/Home/workssuggest">
-                        <img id="search4job" src="search4job.png" /> 
-                    </a>
+                <td> 
+                    <a href=""> 
+                        <img id="search4job" src="search4job.png" alt="חיפוש עבודה"></img> 
+                        <div class="search4job_links hide">
+                            <img id="search4job_links"  src="search4job_links.png" alt="חיפוש עבודה"></img> 
+                            <ul class="links">
+                                <li>
+                                    <a class="links" href="">קישורים לאתרים</a> 
+                                </li>
+                                <li>
+                                    <a class="links" href="">הצעות עבודה רלוונטיות</a> 
+                                </li>
+                                <li>
+                                    <a class="links" href="">שאל את המומחה</a>  
+                                </li>
+                            </ul>   
+                        </div>
+                    </a> 
+                    
                 </td>
                 <td>
-                    <a href="~/Home/test">
-                        <img id="notes_tests" src="notes_tests.png"/> 
+                    <a href="">
+                        <img id="notes_tests" src="notes_tests.png" alt="סיכומים ומבחנים"></img> 
                     </a>
                 </td>
             </tr>
        </table>
         <marquee id="updates" direction="right" behavior="scroll" scrolldelay="10"> Updates</marquee>
-        <marquee id="bless" direction="right" behavior="scroll" scrolldelay="10">מזל לאדר דיין להולדת האחיין מזל טוב ל....   </marquee>
-
-        <div class="footer">
-            <img id="footer" src="footer.jpg" alt="links"/>
-        </div> 
+        <marquee id="bless" direction="right" behavior="scroll" scrolldelay="10">מזל טוב ל   </marquee>
+</div> 
+<div class="footer">
+    <img id="footer" src="footer.jpg" alt="links"></img>
+</div>

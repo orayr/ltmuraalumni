@@ -1,4 +1,4 @@
-.body {
+body {
     background-image: url("background.gif");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -37,7 +37,7 @@ ul.menu img:hover {
 }
 
 .center {
-     margin: 5%;
+/*     margin: 5%;*/
 }
 .center .years {
     display: inline-flex;

@@ -1,6 +1,6 @@
 .header {
     display: inline-flex;
-    margin-bottom: 10%;
+
 }
 #header1, #header2 {
    width:50%;
@@ -19,8 +19,9 @@
 #logo {
     width: 60%;
     position: absolute;
-    left: 25%;
-    top: 380px;
+    left: 21%;
+    top: 300px;
+    margin-top: 5%;
 }
 /*.center {
     display:table-row-group;
@@ -47,9 +48,22 @@
     margin-bottom: -52%;
 }
 
-img#search4job ,a img#notes_tests {
+img#search4job ,a img#notes_tests, #search4job_links {
     margin-left: 50%;
     }
+    
+.hide {
+    display: none;
+}
+ul.links {
+    position: absolute;
+    left: 32%;
+    margin-top: 3px;
+}
+a.links {
+    font-weight: bold;
+    color: #981c26;
+}
     
 marquee {
     width: 80%;
