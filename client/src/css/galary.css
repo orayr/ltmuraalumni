@@ -1,0 +1,115 @@
+body {
+    background-image: url("background.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header {
+    display: inline-flex;
+    margin-bottom: 10%;
+}
+#header1, #header2 {
+   width:50%;
+   height:15%;
+}
+#header2 {
+    margin-left: -25px;
+}
+#logo {
+    width: 45%;
+    position: absolute;
+    left: 30%;
+    top: 220px;
+}
+ul.menu{
+    width: 90%;
+    height: 80px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 370px;
+    display: inline-flex;
+    list-style-type: none;
+}
+ul.menu img {
+    height: 60px;
+}
+ul.menu img:hover {
+    opacity: 0.7;
+}
+
+.center {
+     margin: 5%;
+}
+.center .years {
+    display: inline-flex;
+    list-style-type: none;
+}
+.center .years a img {
+    height: 200px;
+    width: 200px;  
+}
+.center .add_pic a img {
+    width: 300px;
+    height: 177px;
+    margin-top: 10px;  
+}
+.center ul.albums {
+    list-style-type: none;
+}
+
+.center .albums a img {
+    height: 200px;
+    width: 300px;  
+}
+.view button {
+    background: none;
+    border: none;
+}
+
+.view {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px 3px #CCCCCC;
+    -webkit-border-radius: 5px;
+    width: 60%;
+    height: 85%;
+    left: 32%;
+    top: 765px;
+    position: absolute;
+}
+
+img#right {
+    position: absolute;
+    right: 0;
+    top: 42%;
+}
+img#left {
+    position: absolute;
+    left: 0;
+    top: 42%;
+}
+
+#album1, #album2, #album3 {
+    display:block;
+}
+
+#album1-2, #album2-2, #album3-2{
+    display:none;
+}
+
+#first, #second, #third, #forth {
+    display:block;
+}
+
+#first2, #second2, #third2, #forth2{
+    display:none;
+}
+#footer{
+    height: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
