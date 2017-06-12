@@ -18,7 +18,6 @@ app.controller('MainPageCtrl', function ($scope,$rootScope) {
 
             }
 
-
     $rootScope.signInOut = function() {
         //  if (JSON.parse(current)== null) {
         var current=localStorage.getItem("currentUser");

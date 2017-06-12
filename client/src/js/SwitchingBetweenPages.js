@@ -5,7 +5,7 @@ app.config(function ($routeProvider) {
         .when('/',
             {
                 templateUrl: "home.html",
-                controller: "MainPageControl"
+                controller: "HomeCtrl"
             })
          .when('/gallery',
             {

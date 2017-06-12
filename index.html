@@ -19,6 +19,7 @@
     
     <script src="SwitchingBetweenPages.js" ></script>
     <script src="GalleryCtrl.js" ></script>
+    <script src="HomeCtrl.js" ></script>
     <script src="FileUploadCtrl.js" ></script>
     <script src="MainPageCtrl.js"></script>
    
@@ -67,7 +68,7 @@
         <img id="header1" src="header1.gif" alt="TMURA"></img>
         <img id="header2" src="header2.png" alt="TMURA"></img>
         <img id="logo" src="logo.gif" alt="TMURA"></img>
-        <ul class="menu">
+        <ul class="menu" ng-if="!$root.isHomePage">
             <li>
                 <a href="">
                     <img id="menu_recep" src="menu_recep.jpg" alt="מתכונים"></img>
