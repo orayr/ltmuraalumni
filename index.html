@@ -16,22 +16,15 @@
     <script src="jquery-3.1.1.min.js"></script>
  <link rel="shortcut icon" type="image/x-icon" href="client/src/img/favicon.ico" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    
     <script src="SwitchingBetweenPages.js" ></script>
     <script src="GalleryCtrl.js" ></script>
     <script src="FileUploadCtrl.js" ></script>
-
-    <script src="ClassCtrl.js" ></script>
-    <script src="ClassesCtrl.js" ></script>
-    <script src="StudentCtrl.js" ></script>
-    <script src="StudentsCtrl.js" ></script>
-    <script src="MainPageCtrl.js" ></script>
+    <script src="MainPageCtrl.js"></script>
+   
     <script src="adminCtrl.js" ></script>
     <script src="AdminStaffCtrl.js" ></script>
-    <script src="AdminClassesCtrl.js" ></script>
-    <script src="AdminStudentsCtrl.js" ></script>
-    <script src="AdminCoursesCtrl.js" ></script>
-    <script src="CreatStudentsCtrl.js" ></script>
-    <script src="updateStudentCtrl.js" ></script>
+
     <script src="loginCtrl.js" ></script>
 
     <script src="updateClassCtrl.js" ></script>
@@ -64,11 +57,54 @@
     <link href='gallery.css' rel='stylesheet' type='text/css'>
     <link href='style.css' rel='stylesheet' type='text/css'>
 </head>
+</div>
 
-
-<body>
+<body ng-controller="MainPageCtrl">
+    <button   class="loginButton" ng-style="signOutButton" ng-click="signInOut()">sign out</button>
+    <button class="loginButton"  ng-style="signOutButton" ng-click="changePassword()"   >change password</button>
+    <button class="loginButton"  ng-style="adminButton" ng-click="admin()">admin</button>
+    <div class= "header">    
+        <img id="header1" src="header1.gif" alt="TMURA"></img>
+        <img id="header2" src="header2.png" alt="TMURA"></img>
+        <img id="logo" src="logo.gif" alt="TMURA"></img>
+        <ul class="menu">
+            <li>
+                <a href="">
+                    <img id="menu_recep" src="menu_recep.jpg" alt="מתכונים"></img>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img id="menu_galary" src="menu_galary_curr.jpg" alt="גלריה"></img>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img id="menu_job" src="menu_job.jpg" alt="חיפוש עודה - נוכחי"></img>
+                </a>
+            </li>                
+            <li>
+                <a href="">
+                    <img id="menu_kodesh" src="menu_kodesh.jpg" alt="שיעורי קודש"></img>
+                </a>
+            </li>                
+            <li>
+                <a href="">
+                    <img id="menu_cours" src="menu_cours.jpg" alt="חומר לימוד"></img>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img id="menu_home" src="menu_home.jpg" alt="בית"></img>
+                </a>
+            </li>
+        </ul>
+    </div>
     <div ng-view>
     </div>
+    <div class="footer">
+        <img id="footer" src="footer.jpg" alt="links"></img>
+    </div> 
 </body>
 
 

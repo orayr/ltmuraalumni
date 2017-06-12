@@ -16,12 +16,6 @@ var Docxtemplater = require('docxtemplater');
  var path = require('path');
 //var download = require('download-file');
 
-
-
-
-
-
-
 var app = express();
 var port = 5000;
 var router  = express.Router();
@@ -62,141 +56,32 @@ db.once('open', function() {
 // we're connected! Create your schemas and models here
 });
 
-//mongoose.Promise = global.Promise;
-
 mongoose.connect("mongodb://tmuracollege:123456@ds119772.mlab.com:19772/tmuradb");
-// mongoose.connect("mongodb://chanami:123456@ds139438.mlab.com:39438/smart_school");
+
 console.log("db connected!");
 
 //=========================--ROUTES/API--====================================
 //API ROUTES
 
-var student = require('./server/controllers/student');
-var classes = require('./server/controllers/classes');
 var user = require('./server/controllers/user');
-
+var image = require('./server/controllers/image');
 
 router.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
-//console.log("after get");
-
-
-// Get all products
-// router.get('/students', student.getAll);
-// router.get('/classes', classes.getAll);
 router.get('/users', user.getAll);
 router.get('/gallery', user.getAll);
 
-
-// router.post('/createStudent', student.create);
-//
-// app.post('/createStudent', function (req, res) {
-//     console.log("in server function createStudent");
-//
-//   student.create(req);
-//    res.send("hello");
-// })
-// router.get('/deleteStudent/:id',student.delete);
-// router.get('/deleteCourse/:courseid',classes.deleteCourse);
-
-
-// router.post('/updateStudent', student.update);
-// router.post('/updateGreads', student.updateGreads);
-// router.post('/confirmCourse', student.confirmCourse);
-// router.post('/cancelConfirmCourse',student.cancelConfirmCourse);
 router.post('/login', user.getUser);
 router.post('/changePassword', user.updatePassword);
-
-
-
-
-// router.post('/deleteCourse', classes.deleteCourse);
-
-
-// router.post('/updateClass', classes.update);
-// router.post('/updateCourse', classes.updateCourse);
-// router.post('/AddCourse', classes.CreateCourse);
-// router.post('/updateGreads', student.updateGreads);
-
-// router.post('/confirmCourse', student.confirmCourse);
-// router.post('/cancelConfirmCourse',student.cancelConfirmCourse);
-// router.post('/switchClasses',classes.switchClasses);
 router.post('/updateStaff',user.updateStaff);
 router.post('/createStuff',user.createStuff);
 router.post('/deleteUser',user.deleteUser);
-
-
-
-
-
-//router.post('/login', staff.getUser);
-//router.post('/confirmCourse', student.confirmCourse);
-//router.post('/cancelConfirmCourse',student.cancelConfirmCourse);
 router.post('/login', user.getUser);
-// router.post('/admin/Certificate',  student.certificate);
-
-
-// router.get('/admin/download',student.download);
-
-// router.get('/download', function (req, res, next) {
-//     console.log("in server-download");
-//   for(var i=1;i<=2;i++) {
-//
-//          console.log("i" + i);
-//          var filePath = "certificate/input" + i + ".docx"; // Or format the path using the `id` rest param
-//          var fileName = "ans" + i + ".docx"; // The default name the browser will use
-//
-//        //  res.download(filePath, fileName);
-//       res.download(filePath, fileName, function(err){
-//           if (err) {
-//               // Handle error, but keep in mind the response may be partially-sent
-//               // so check res.headersSent
-//           } else {
-//               console.log("ans" + i);
-//           }
-//       });
-//
-//   }
-// });
-// router.get('/download2', function (req, res, next) {
-//     var url = 'certificate/input1.docx';
-//
-//     var options = {
-//         directory: 'certificate',
-//       //  filename: "/anss1.docx",
-//
-//     }
-//
-//     res.download(url, options, function (err) {
-//         if (err) throw err
-//         console.log("meow")
-//     })
-// });
-
-
-
-
-
-
+router.post('/uploadimage', image.addNew);
 
 app.use('/', router);
-
-
-
-
-
-
-
-
-
-
 module.exports = router;
- //app.use('/client',);
-
-// app.get('/', function (req, res) {
-//     res.send('GET request to the homepage')
-// })
 
 //=========================--START THE SERVER---=========================
 app.listen(port);
