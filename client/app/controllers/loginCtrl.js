@@ -50,7 +50,7 @@ app.controller('loginCtrl',function($scope, $rootScope,$routeParams,usersService
                         $rootScope.adminButton = {'visibility': 'hidden'};
 
 
-                    window.open("http://localhost:5000/#/classes","_self")
+                    window.open("http://localhost:5000/#/","_self")
 
 
                 }
