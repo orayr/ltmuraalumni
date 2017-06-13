@@ -12,6 +12,11 @@ app.config(function ($routeProvider) {
                 templateUrl: "sites.html",
                 controller: "SitesCtrl"
             })
+        .when('/askExpert',
+            {
+                templateUrl: "askExpert.html",
+                controller: "AskExpertCtrl"
+            })
           .when('/lessons',
             {
                 templateUrl: "lessons.html",

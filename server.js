@@ -76,6 +76,7 @@ router.get('/users', user.getAll);
 router.get('/gallery', user.getAll);
 router.get('/sites', user.getAll);
 router.get('/lessons', user.getAll);
+router.get('/askExpert', user.getAll);
 
 router.post('/login', user.getUser);
 router.post('/changePassword', user.updatePassword);

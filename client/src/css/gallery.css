@@ -1,6 +1,7 @@
 .center {
 /*     margin: 5%;*/
-    margin-top: 10%;
+    margin-top: 175px;
+    margin-left: 65px;
 }
 .center .years {
     display: inline-flex;
@@ -36,8 +37,8 @@
     -webkit-border-radius: 5px;
     width: 60%;
     height: 85%;
-    left: 32%;
-    top: 765px;
+    left: 380px;
+    max-height: 578px;
     position: absolute;
 }
 

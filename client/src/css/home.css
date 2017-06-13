@@ -18,18 +18,26 @@
     margin-left: 17.5%;
     margin-bottom: 8%;
 }
-
+.center a{
+    width: 100%;
+    margin-bottom: -40%;
+    display: block;
+}
 .center a img {
     width: 100%;
-    margin-bottom: -52%;
 }
 
 img#search4job ,a img#notes_tests, #search4job_links {
-    margin-left: 50%;
+    /*margin-left: 50%;*/
+        max-width: 228px;
+        border-radius: 100%;
     }
     
 .hide {
     display: none;
+}
+.show {
+    display: block;
 }
 ul.links {
     position: absolute;
