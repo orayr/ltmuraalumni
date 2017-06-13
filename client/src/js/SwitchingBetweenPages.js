@@ -27,7 +27,12 @@ app.config(function ($routeProvider) {
                 templateUrl: "gallery.html",
                 controller: "GalleryCtrl"
             })
-////////////////////////////////admin side
+        .when('/jobsSite',
+            {
+                templateUrl: "jobsSite.html",
+                controller: "jobsSiteCtrl"
+            })
+///////////////////////////admin side
         .when('/admin',
             {
                 templateUrl: "admin.html",
