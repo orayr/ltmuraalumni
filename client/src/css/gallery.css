@@ -4,25 +4,34 @@
     margin-left: 65px;
 }
 .center .years {
-    display: inline-flex;
+    display: block;
     list-style-type: none;
 }
+.center .years li{
+    display: inline-block;
+}
 .center .years a img {
-    height: 200px;
-    width: 200px;  
+    height: 180px;
+    width: 180px;
 }
 .center .add_pic a img {
-    width: 300px;
-    height: 177px;
+    width: 245px;
+    height: 140px;
     margin-top: 10px;  
+}
+.carousel-inner .text-center img{
+    /*width: 767px;*/
+    height: 400px; 
 }
 .center ul.albums {
     list-style-type: none;
+    display: inline-block;
+    float: left;
 }
 
 .center .albums a img {
-    height: 200px;
-    width: 300px;  
+    height: 155px;
+    width: 245px; 
 }
 .view button {
     background: none;
