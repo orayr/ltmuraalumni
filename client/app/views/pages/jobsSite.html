@@ -1,65 +1,33 @@
- <head>
-        <title></title>
+
         <link rel="stylesheet" type="text/css" href="jobsSite.css"/>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-               $(".submenujob #menu_job").mouseenter(function(){
-                           $(".submenu").removeClass( "hide" );
-                          });
- 
-              $(".submenujob").mouseleave(function(){
-                    $(".submenu").addClass( "hide" );
-                    });
-              });
-                            
-        </script> 
-    </head>
-    <body>
+    <div class="body">
         <div class= "header">    
             <img id="header1" src="header1Jobs.png" alt="TMURA"></img>
             <img id="header2" src="header2Jobs.png" alt="TMURA"></img>
             <img id="logo" src="logo.gif" alt="TMURA"></img>
             <ul class="menu">
-                <li>
-                    <a href="">
-                        <img id="menu_galary" src="menu_galary.jpg" alt="גלריה"></img>
+                  <li>
+                    <a href="#/sites">
+                        <img id="menu_recep" src="siteR.png" alt="אתרים"></img>
                     </a>
                 </li>
-                <li class="submenujob">
-                    <a href="">
+                <li>
+                    <a href="#/jobsSite">
                         <img id="menu_job" src="menu_jobs_curr.jpg" alt="חיפוש עודה - נוכחי"></img>
                     </a>
-                    <ul class="submenu hide">
-                        <li>
-                            <a href="">
-                                <img src="submenu_links_curr.png" alt="קישורים לאתרי קורסים"></img>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="submenu_findjob.png" alt="הצעות עבודה רלוונטיות-נוכחי"></img>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="submenu_gethelp.png" alt="שאל את המומחה"></img>
-                            </a>
-                        </li>                
-                    </ul>
                 </li>                
                 <li>
-                    <a href="">
+                    <a href="#/lessons">
                         <img id="menu_kodesh" src="menu_kodesh.jpg" alt="שיעורי קודש"></img>
                     </a>
                 </li>                
-                <li>
-                    <a href="">
-                        <img id="menu_cours" src="menu_cours.jpg" alt="חומר לימוד"></img>
+                 <li>
+                    <a href="#/gallery">
+                        <img id="menu_galary" src="menu_galary.jpg" alt="גלריה"></img>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#/">
                         <img id="menu_home" src="menu_home.jpg" alt="בית"></img>
                     </a>
                 </li>
@@ -92,5 +60,4 @@
             </ol>
         </div>
             
-            
-    </body>
+    </div>        
