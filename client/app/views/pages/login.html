@@ -1,9 +1,26 @@
-<form id="signIn" name="myForm1" ng-submit="login(myForm1)">
-    <p>כניסת משתמש</p>
-    <hr />
-    <label for="user">תעודת זהות</label><br />
-    <input type="text" id="user" name="user" required/><br />
-    <label for="password">סיסמה</label><br />
-    <input type="password" id="password" name="password" required/><br /><br />
-    <input type="submit" id="enter" value="כניסה" /><br />
-</form>
+
+<div >
+ <link rel="stylesheet" type="text/css" href="login.css"/>
+        <div class= "header">    
+            <img id="header1" src="header1.jpg" alt="TMURA"></img>
+            <img id="header2" src="header2.jpg" alt="TMURA"></img>
+        </div>
+        <div class="logo">
+            <img id="logo" src="logo.jpg" alt="TMURA"></img>
+        </div>
+        <div class="login-options">
+
+            <form id="tmuralogin" name="myForm1" ng-submit="login(myForm1)">
+                <h2>ברוכים הבאים לבוגרת תמורה</h2>
+                <input type="text" id="mail" name="user"  placeholder="שם משתמש" required/><br />
+			    <input type="password" id="pswd" name="password"  placeholder="סיסמא" required/><br /><br />
+			    <input type="submit" id="submit" value="כניסה" /><br />
+            </form> 
+        </div>
+        <div class="footer">
+            <img id="footer" src="footer.jpg" alt="links"></img>
+            <img id="footer_image" src="image.jpg" alt="TMURA"></img>
+        </div>
+    </div>
+</html>
+

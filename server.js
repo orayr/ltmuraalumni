@@ -29,6 +29,8 @@ app.use(express.static(path.join(__dirname,'/client/src/img/home')));
 app.use(express.static(path.join(__dirname,'/client/src/img/gallery')));
 app.use(express.static(path.join(__dirname,'/client/src/img/sites')));
 app.use(express.static(path.join(__dirname,'/client/src/img/lessons')));
+app.use(express.static(path.join(__dirname,'/client/src/img/login')));
+app.use(express.static(path.join(__dirname,'/client/src/img/jobsSite')));
 
 app.use(express.static(path.join(__dirname,'client/app/controllers')));
 app.use(express.static(path.join(__dirname,'client/app/services')));
@@ -39,6 +41,7 @@ app.use(express.static(path.join(__dirname,'/client/src/img/')));
 app.use(express.static(path.join(__dirname,'client/app/views/pages/')));
 app.use(express.static(path.join(__dirname,'client/src/js')));
 app.use(express.static(path.join(__dirname,'client/src/css')));
+
 app.use(bodyParser.urlencoded({ extended:true}));
 app.use(bodyParser.json());
 
@@ -77,6 +80,7 @@ router.get('/gallery', user.getAll);
 router.get('/sites', user.getAll);
 router.get('/lessons', user.getAll);
 router.get('/askExpert', user.getAll);
+router.get('/jobsSite', user.getAll);
 
 router.post('/login', user.getUser);
 router.post('/changePassword', user.updatePassword);
@@ -84,6 +88,7 @@ router.post('/updateStaff',user.updateStaff);
 router.post('/createStuff',user.createStuff);
 router.post('/deleteUser',user.deleteUser);
 router.post('/uploadimage', image.addNew);
+
 
 app.use('/', router);
 module.exports = router;

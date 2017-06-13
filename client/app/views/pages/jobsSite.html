@@ -1,0 +1,96 @@
+ <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="jobsSite.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+               $(".submenujob #menu_job").mouseenter(function(){
+                           $(".submenu").removeClass( "hide" );
+                          });
+ 
+              $(".submenujob").mouseleave(function(){
+                    $(".submenu").addClass( "hide" );
+                    });
+              });
+                            
+        </script> 
+    </head>
+    <body>
+        <div class= "header">    
+            <img id="header1" src="header1Jobs.png" alt="TMURA"></img>
+            <img id="header2" src="header2Jobs.png" alt="TMURA"></img>
+            <img id="logo" src="logo.gif" alt="TMURA"></img>
+            <ul class="menu">
+                <li>
+                    <a href="">
+                        <img id="menu_galary" src="menu_galary.jpg" alt="גלריה"></img>
+                    </a>
+                </li>
+                <li class="submenujob">
+                    <a href="">
+                        <img id="menu_job" src="menu_jobs_curr.jpg" alt="חיפוש עודה - נוכחי"></img>
+                    </a>
+                    <ul class="submenu hide">
+                        <li>
+                            <a href="">
+                                <img src="submenu_links_curr.png" alt="קישורים לאתרי קורסים"></img>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="submenu_findjob.png" alt="הצעות עבודה רלוונטיות-נוכחי"></img>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="submenu_gethelp.png" alt="שאל את המומחה"></img>
+                            </a>
+                        </li>                
+                    </ul>
+                </li>                
+                <li>
+                    <a href="">
+                        <img id="menu_kodesh" src="menu_kodesh.jpg" alt="שיעורי קודש"></img>
+                    </a>
+                </li>                
+                <li>
+                    <a href="">
+                        <img id="menu_cours" src="menu_cours.jpg" alt="חומר לימוד"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img id="menu_home" src="menu_home.jpg" alt="בית"></img>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="boxes">
+            <ol id="search">
+                <h2>חיפוש משרות</h2>
+                <li><a href="https://www.drushim.co.il/">jobs.yad2.co.il</a></li>
+                <li><a href="https://www.drushim.co.il/">www.drushim.co.il</a></li>
+                <li><a href="https://www.alljobs.co.il/">www.alljobs.co.il</a></li> 
+                <li><a href="https://www.Linkedin.com/">www.Linkedin.com</a></li> 
+            </ol>
+            <ol id="guidance">
+                <h2>הכוון תעסוקתי</h2>
+                <li><a href="http://www.kamatech.org.il/">www.kamatech.org.il</a></li>
+                <li><a href="http://kivun-jerusalem.com/">kivun-jerusalem.com</a></li>
+                <li><a href="http://www2.jdc.org.il/he">www.jdc.org.il</a></li>
+                <li><a href="http://www.mati.org.il/?lang=1">www.mati.org.il</a></li>
+            </ol>
+            <ol id="companies">
+                <h2>חברות הייטק</h2>
+                <li><a href="http://www.intel.co.il/content/www/il/he/homepage.html">www.intel.co.il</a></li>
+                <li><a href="http://www.cisco.com/">www.cisco.com</a></li>
+                <li><a href="http://www.matrix.co.il/Pages/default.aspx">www.matrix.co.il</a></li>
+                <li><a href=" http://www.elad.co.il/">www.elad.co.il</a></li>
+                <li><a href="http://www.sintecmedia.com/">www.sintecmedia.com</a></li>
+               
+                
+            </ol>
+        </div>
+            
+            
+    </body>
