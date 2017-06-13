@@ -20,8 +20,7 @@
     margin-top: 10px;  
 }
 .carousel-inner .text-center img{
-    /*width: 767px;*/
-    height: 400px; 
+    width: 700px;
 }
 .center ul.albums {
     list-style-type: none;
@@ -76,6 +75,10 @@ img#left {
 
 #first2, #second2, #third2, #forth2{
     display:none;
+}
+.footer{
+    background: white;
+    margin-top: 56px;
 }
 #footer{
     height: 130px;

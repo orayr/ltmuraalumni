@@ -1,4 +1,4 @@
-app.controller('GalleryCtrl',function($rootScope) {
+app.controller('jobsSiteCtrl',function($rootScope) {
 	$rootScope.isHomePage = true;
 
 });

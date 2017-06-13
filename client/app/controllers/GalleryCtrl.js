@@ -1,14 +1,14 @@
-app.controller('GalleryCtrl',function($scope) {
+app.controller('GalleryCtrl', function ($scope) {
   $scope.myInterval = 5000;
   $scope.noWrapSlides = false;
   $scope.active = 0;
   var slides = $scope.slides = [];
   var currIndex = 0;
-
+  $scope.party=[{image:'upload/party/11.JPG'},{image:'upload/party/12.JPG'}];//,{},{},{},{}];
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length + 1;
     slides.push({
-      image: '//unsplash.it/' + newWidth + '/300',
+      image: '/src/upload/party/1'+(currIndex+1)+'.JPG',
       text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
       id: currIndex++
     });
@@ -19,7 +19,7 @@ app.controller('GalleryCtrl',function($scope) {
     assignNewIndexesToSlides(indexes);
   };
 
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 9; i++) {
     $scope.addSlide();
   }
 
