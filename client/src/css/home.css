@@ -19,8 +19,8 @@
     margin-bottom: 8%;
 }
 .center a{
-    width: 100%;
-    margin-bottom: -40%;
+    width: 80%;
+    margin-bottom: -33%;
     display: block;
 }
 .center a img {
@@ -29,7 +29,6 @@
 
 img#search4job ,a img#notes_tests, #search4job_links {
     /*margin-left: 50%;*/
-        max-width: 228px;
         border-radius: 100%;
     }
     
